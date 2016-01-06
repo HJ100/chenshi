@@ -25,7 +25,7 @@
     [YGApperance setApperance];
     
     UINavigationController *nav =[[UINavigationController alloc] initWithRootViewController:[[YGRootViewController alloc] init]];
-    nav.navigationBar.barTintColor = [UIColor blueColor];
+    nav.navigationBar.barTintColor = UIColorRGB(67, 82, 140);
     
     self.window.rootViewController = nav;
     

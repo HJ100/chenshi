@@ -118,10 +118,25 @@
 		2A0260791C33BAA600297022 /* walkthrough_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A02606E1C33BAA600297022 /* walkthrough_3.jpg */; };
 		2A02607A1C33BAA600297022 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A0260701C33BAA600297022 /* Contents.json */; };
 		2A02607B1C33BAA600297022 /* walkthrough_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A0260711C33BAA600297022 /* walkthrough_4.jpg */; };
+		2A07CCE61C3CE8F300C2F2FE /* YGButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A07CCE51C3CE8F300C2F2FE /* YGButton.m */; };
 		2A2EF56A1C350F7D00EB66AE /* briefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2EF5681C350F7D00EB66AE /* briefViewController.m */; };
 		2A2EF56B1C350F7D00EB66AE /* briefViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A2EF5691C350F7D00EB66AE /* briefViewController.xib */; };
 		2A2EF5701C35244E00EB66AE /* YGSpecialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2EF56E1C35244E00EB66AE /* YGSpecialViewController.m */; };
 		2A2EF5711C35244E00EB66AE /* YGSpecialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A2EF56F1C35244E00EB66AE /* YGSpecialViewController.xib */; };
+		2A4E73EA1C3BA328000B0195 /* YGTqViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4E73E81C3BA328000B0195 /* YGTqViewController.m */; };
+		2A4E73EB1C3BA328000B0195 /* YGTqViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A4E73E91C3BA328000B0195 /* YGTqViewController.xib */; };
+		2A4E73F61C3BBF8C000B0195 /* 个人图标@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A4E73ED1C3BBF8C000B0195 /* 个人图标@3x.png */; };
+		2A4E73F71C3BBF8C000B0195 /* 便民生活图标@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A4E73EE1C3BBF8C000B0195 /* 便民生活图标@3x.png */; };
+		2A4E73F81C3BBF8C000B0195 /* 天气多云-图标@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A4E73EF1C3BBF8C000B0195 /* 天气多云-图标@3x.png */; };
+		2A4E73F91C3BBF8C000B0195 /* 招商引资图标@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A4E73F01C3BBF8C000B0195 /* 招商引资图标@3x.png */; };
+		2A4E73FA1C3BBF8C000B0195 /* 时事资讯图标@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A4E73F11C3BBF8C000B0195 /* 时事资讯图标@3x.png */; };
+		2A4E73FB1C3BBF8C000B0195 /* 概述图标@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A4E73F21C3BBF8C000B0195 /* 概述图标@3x.png */; };
+		2A4E73FC1C3BBF8C000B0195 /* 民心民意图标@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A4E73F31C3BBF8C000B0195 /* 民心民意图标@3x.png */; };
+		2A4E73FD1C3BBF8C000B0195 /* 聚焦三农图标@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A4E73F41C3BBF8C000B0195 /* 聚焦三农图标@3x.png */; };
+		2A4E73FE1C3BBF8C000B0195 /* 阳光政务图标@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A4E73F51C3BBF8C000B0195 /* 阳光政务图标@3x.png */; };
+		2A4E74001C3BC65D000B0195 /* 01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A4E73FF1C3BC65D000B0195 /* 01.jpg */; };
+		2A4E74021C3BC661000B0195 /* 00.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A4E74011C3BC661000B0195 /* 00.jpg */; };
+		2A4E74041C3BC665000B0195 /* 02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A4E74031C3BC665000B0195 /* 02.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -265,12 +280,29 @@
 		2A0260711C33BAA600297022 /* walkthrough_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = walkthrough_4.jpg; sourceTree = "<group>"; };
 		2A02607D1C33C34700297022 /* YGConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YGConstant.h; sourceTree = "<group>"; };
 		2A02607F1C33CC7B00297022 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		2A07CCE41C3CE8F300C2F2FE /* YGButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGButton.h; sourceTree = "<group>"; };
+		2A07CCE51C3CE8F300C2F2FE /* YGButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGButton.m; sourceTree = "<group>"; };
 		2A2EF5671C350F7D00EB66AE /* briefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = briefViewController.h; sourceTree = "<group>"; };
 		2A2EF5681C350F7D00EB66AE /* briefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = briefViewController.m; sourceTree = "<group>"; };
 		2A2EF5691C350F7D00EB66AE /* briefViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = briefViewController.xib; sourceTree = "<group>"; };
 		2A2EF56D1C35244E00EB66AE /* YGSpecialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGSpecialViewController.h; sourceTree = "<group>"; };
 		2A2EF56E1C35244E00EB66AE /* YGSpecialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGSpecialViewController.m; sourceTree = "<group>"; };
 		2A2EF56F1C35244E00EB66AE /* YGSpecialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YGSpecialViewController.xib; sourceTree = "<group>"; };
+		2A4E73E71C3BA328000B0195 /* YGTqViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGTqViewController.h; sourceTree = "<group>"; };
+		2A4E73E81C3BA328000B0195 /* YGTqViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGTqViewController.m; sourceTree = "<group>"; };
+		2A4E73E91C3BA328000B0195 /* YGTqViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YGTqViewController.xib; sourceTree = "<group>"; };
+		2A4E73ED1C3BBF8C000B0195 /* 个人图标@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "个人图标@3x.png"; sourceTree = "<group>"; };
+		2A4E73EE1C3BBF8C000B0195 /* 便民生活图标@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "便民生活图标@3x.png"; sourceTree = "<group>"; };
+		2A4E73EF1C3BBF8C000B0195 /* 天气多云-图标@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "天气多云-图标@3x.png"; sourceTree = "<group>"; };
+		2A4E73F01C3BBF8C000B0195 /* 招商引资图标@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "招商引资图标@3x.png"; sourceTree = "<group>"; };
+		2A4E73F11C3BBF8C000B0195 /* 时事资讯图标@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "时事资讯图标@3x.png"; sourceTree = "<group>"; };
+		2A4E73F21C3BBF8C000B0195 /* 概述图标@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "概述图标@3x.png"; sourceTree = "<group>"; };
+		2A4E73F31C3BBF8C000B0195 /* 民心民意图标@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "民心民意图标@3x.png"; sourceTree = "<group>"; };
+		2A4E73F41C3BBF8C000B0195 /* 聚焦三农图标@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "聚焦三农图标@3x.png"; sourceTree = "<group>"; };
+		2A4E73F51C3BBF8C000B0195 /* 阳光政务图标@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "阳光政务图标@3x.png"; sourceTree = "<group>"; };
+		2A4E73FF1C3BC65D000B0195 /* 01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 01.jpg; sourceTree = "<group>"; };
+		2A4E74011C3BC661000B0195 /* 00.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 00.jpg; sourceTree = "<group>"; };
+		2A4E74031C3BC665000B0195 /* 02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 02.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -321,6 +353,7 @@
 		2A025F561C337CBA00297022 /* wisdomTown */ = {
 			isa = PBXGroup;
 			children = (
+				2A4E73EC1C3BBF8C000B0195 /* 首页图标 */,
 				2A025FA91C338E9C00297022 /* image */,
 				2A025F5A1C337CBA00297022 /* AppDelegate.h */,
 				2A025F5B1C337CBA00297022 /* AppDelegate.m */,
@@ -365,10 +398,13 @@
 		2A025FA41C33874800297022 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				2A4E73E61C3BA300000B0195 /* 天气 */,
 				2A2EF56C1C35241200EB66AE /* 人文特色 */,
 				2A025FA51C33879900297022 /* YGApperance.h */,
 				2A025FA61C33879900297022 /* YGApperance.m */,
 				2A02607D1C33C34700297022 /* YGConstant.h */,
+				2A07CCE41C3CE8F300C2F2FE /* YGButton.h */,
+				2A07CCE51C3CE8F300C2F2FE /* YGButton.m */,
 				2A2EF5661C350BCF00EB66AE /* 乡镇概述 */,
 			);
 			path = Base;
@@ -562,6 +598,35 @@
 			name = "人文特色";
 			sourceTree = "<group>";
 		};
+		2A4E73E61C3BA300000B0195 /* 天气 */ = {
+			isa = PBXGroup;
+			children = (
+				2A4E73E71C3BA328000B0195 /* YGTqViewController.h */,
+				2A4E73E81C3BA328000B0195 /* YGTqViewController.m */,
+				2A4E73E91C3BA328000B0195 /* YGTqViewController.xib */,
+			);
+			name = "天气";
+			sourceTree = "<group>";
+		};
+		2A4E73EC1C3BBF8C000B0195 /* 首页图标 */ = {
+			isa = PBXGroup;
+			children = (
+				2A4E74011C3BC661000B0195 /* 00.jpg */,
+				2A4E73FF1C3BC65D000B0195 /* 01.jpg */,
+				2A4E74031C3BC665000B0195 /* 02.jpg */,
+				2A4E73ED1C3BBF8C000B0195 /* 个人图标@3x.png */,
+				2A4E73EE1C3BBF8C000B0195 /* 便民生活图标@3x.png */,
+				2A4E73EF1C3BBF8C000B0195 /* 天气多云-图标@3x.png */,
+				2A4E73F01C3BBF8C000B0195 /* 招商引资图标@3x.png */,
+				2A4E73F11C3BBF8C000B0195 /* 时事资讯图标@3x.png */,
+				2A4E73F21C3BBF8C000B0195 /* 概述图标@3x.png */,
+				2A4E73F31C3BBF8C000B0195 /* 民心民意图标@3x.png */,
+				2A4E73F41C3BBF8C000B0195 /* 聚焦三农图标@3x.png */,
+				2A4E73F51C3BBF8C000B0195 /* 阳光政务图标@3x.png */,
+			);
+			path = "首页图标";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -677,15 +742,21 @@
 				2A0260361C338E9C00297022 /* lv_cityPage_shopping@2x.png in Resources */,
 				2A0260191C338E9C00297022 /* collect_big.png in Resources */,
 				2A02603B1C338E9C00297022 /* lv_first_read_icon_rec@2x.png in Resources */,
+				2A4E73FB1C3BBF8C000B0195 /* 概述图标@3x.png in Resources */,
 				2A0260281C338E9C00297022 /* image_footprint_search@2x.png in Resources */,
 				2A02604A1C338E9C00297022 /* restaurant.png in Resources */,
+				2A4E73EB1C3BA328000B0195 /* YGTqViewController.xib in Resources */,
 				2A0260471C338E9C00297022 /* nav_mine_small.png in Resources */,
 				2A02602F1C338E9C00297022 /* item_clear.png in Resources */,
 				2A0260491C338E9C00297022 /* place_hoder_1.jpg in Resources */,
 				2A0260741C33BAA600297022 /* Contents.json in Resources */,
+				2A4E73FD1C3BBF8C000B0195 /* 聚焦三农图标@3x.png in Resources */,
+				2A4E73FC1C3BBF8C000B0195 /* 民心民意图标@3x.png in Resources */,
 				2A025F8E1C337DF500297022 /* YGRootViewController.xib in Resources */,
+				2A4E73FA1C3BBF8C000B0195 /* 时事资讯图标@3x.png in Resources */,
 				2A025F671C337CBA00297022 /* LaunchScreen.storyboard in Resources */,
 				2A02603A1C338E9C00297022 /* lv_first_read_icon_album@2x.png in Resources */,
+				2A4E74001C3BC65D000B0195 /* 01.jpg in Resources */,
 				2A02601F1C338E9C00297022 /* footprint_icon_world_normal@2x.png in Resources */,
 				2A0260761C33BAA600297022 /* Contents.json in Resources */,
 				2A02605D1C338E9C00297022 /* 背景图.png in Resources */,
@@ -717,6 +788,7 @@
 				2A0260451C338E9C00297022 /* nav_mine.png in Resources */,
 				2A02602D1C338E9C00297022 /* item_about.png in Resources */,
 				2A02607B1C33BAA600297022 /* walkthrough_4.jpg in Resources */,
+				2A4E73F71C3BBF8C000B0195 /* 便民生活图标@3x.png in Resources */,
 				2A02602C1C338E9C00297022 /* info_green_small.png in Resources */,
 				2A02603D1C338E9C00297022 /* lv_scene_all_list_star_dark@2x.png in Resources */,
 				2A0260401C338E9C00297022 /* LVOtherCellAlbum@2x.png in Resources */,
@@ -737,6 +809,7 @@
 				2A0260291C338E9C00297022 /* image_list_open_item@2x.png in Resources */,
 				2A0260211C338E9C00297022 /* grayArrow.png in Resources */,
 				2A0260751C33BAA600297022 /* walkthrough_1.jpg in Resources */,
+				2A4E73F91C3BBF8C000B0195 /* 招商引资图标@3x.png in Resources */,
 				2A02601D1C338E9C00297022 /* decollect_big.png in Resources */,
 				2A02601C1C338E9C00297022 /* collect_small.png in Resources */,
 				2A0260341C338E9C00297022 /* lv_cityPage_city_top_scene@2x.png in Resources */,
@@ -746,6 +819,7 @@
 				2A0260481C338E9C00297022 /* photoDefault.png in Resources */,
 				2A0260201C338E9C00297022 /* footprint_icon_world_normal@3x.png in Resources */,
 				2A02604C1C338E9C00297022 /* share.png in Resources */,
+				2A4E73F61C3BBF8C000B0195 /* 个人图标@3x.png in Resources */,
 				2A0260331C338E9C00297022 /* liebiao_white@2x.png in Resources */,
 				2A02603C1C338E9C00297022 /* lv_possible_place_praised_icon@2x.png in Resources */,
 				2A2EF56B1C350F7D00EB66AE /* briefViewController.xib in Resources */,
@@ -757,7 +831,9 @@
 				2A0260351C338E9C00297022 /* lv_cityPage_dining@2x.png in Resources */,
 				2A0260771C33BAA600297022 /* walkthrough_2.jpg in Resources */,
 				2A0260181C338E9C00297022 /* collect_add_big.png in Resources */,
+				2A4E73FE1C3BBF8C000B0195 /* 阳光政务图标@3x.png in Resources */,
 				2A02602B1C338E9C00297022 /* info_green.png in Resources */,
+				2A4E73F81C3BBF8C000B0195 /* 天气多云-图标@3x.png in Resources */,
 				2A02604D1C338E9C00297022 /* share_big.png in Resources */,
 				2A0260111C338E9C00297022 /* blackArrow@2x.png in Resources */,
 				2A025F621C337CBA00297022 /* Main.storyboard in Resources */,
@@ -765,9 +841,11 @@
 				2A02602E1C338E9C00297022 /* item_about@2x.png in Resources */,
 				2A0260791C33BAA600297022 /* walkthrough_3.jpg in Resources */,
 				2A0260321C338E9C00297022 /* item_like@2x.png in Resources */,
+				2A4E74021C3BC661000B0195 /* 00.jpg in Resources */,
 				2A02605A1C338E9C00297022 /* user_72.png in Resources */,
 				2A02603E1C338E9C00297022 /* lv_scene_all_list_star_half@2x.png in Resources */,
 				2A0260251C338E9C00297022 /* icn_smart_loading_photo@2x.png in Resources */,
+				2A4E74041C3BC665000B0195 /* 02.jpg in Resources */,
 				2A0260221C338E9C00297022 /* grayArrow@2x.png in Resources */,
 				2A0260061C338E9C00297022 /* Addplace_icon_hotel-2@3x.png in Resources */,
 				2A0260511C338E9C00297022 /* share_small.png in Resources */,
@@ -797,7 +875,9 @@
 			files = (
 				2A025F5C1C337CBA00297022 /* AppDelegate.m in Sources */,
 				2A2EF56A1C350F7D00EB66AE /* briefViewController.m in Sources */,
+				2A07CCE61C3CE8F300C2F2FE /* YGButton.m in Sources */,
 				2A0260611C33ABEA00297022 /* YGEasyScrollView.m in Sources */,
+				2A4E73EA1C3BA328000B0195 /* YGTqViewController.m in Sources */,
 				2A025F8D1C337DF500297022 /* YGRootViewController.m in Sources */,
 				2A2EF5701C35244E00EB66AE /* YGSpecialViewController.m in Sources */,
 				2A025F591C337CBA00297022 /* main.m in Sources */,

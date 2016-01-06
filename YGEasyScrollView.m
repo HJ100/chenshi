@@ -53,7 +53,7 @@
     
     if (self.isCircle == NO) {
         for (int i=0; i<images.count; i++) {
-            UIImageView *imagV = [[UIImageView alloc] initWithFrame:CGRectMake(i *(self.frame.size.width), 0, self.frame.size.width, self.frame.size.height)];
+            UIImageView *imagV = [[UIImageView alloc] initWithFrame:CGRectMake(i *(self.frame.size.width), 0, self.frame.size.width, self.frame.size.height-10)];
             imagV.image=[UIImage imageNamed:images[i]];
             [self.scrV addSubview:imagV];
             self.scrV.contentSize = CGSizeMake(CGRectGetMaxX(imagV.frame), 0);
@@ -63,7 +63,7 @@
     else
     {
         for (int i=0; i<images.count +2; i++) {
-            UIImageView *imageV =[[UIImageView alloc] initWithFrame:CGRectMake(i *(self.frame.size.width), 0, self.frame.size.width, self.frame.size.height)];
+            UIImageView *imageV =[[UIImageView alloc] initWithFrame:CGRectMake(i *(self.frame.size.width), 0, self.frame.size.width, self.frame.size.height+15)];
             NSString *path = nil;
             if (i==0) {
                 path =images.lastObject;
