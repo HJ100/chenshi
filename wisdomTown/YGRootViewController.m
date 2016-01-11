@@ -10,8 +10,12 @@
 #import "YGEasyScrollView.h"
 #import "briefViewController.h"
 #import "YGSpecialViewController.h"
-#import "YGTqViewController.h"
+#import "YGWeaViewController.h"
 #import "YGButton.h"
+#import "YGEasyLifeViewController.h"
+#import "YGFarmerViewController.h"
+#import "YGGovernmentViewController.h"
+#import "YGNewsViewController.h"
 
 #define baseTag 324
 
@@ -30,6 +34,13 @@
     [self createButtons];
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:YES];
+    self.navigationController.navigationBarHidden = NO;
+}
+
+
 -(void)setNav
 {
     //设置导航条的左视图
@@ -42,18 +53,21 @@
     [imageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pushAct)]];
     
     UIView *rightView =[[UIView alloc] initWithFrame:CGRectMake(0, 25, 70, 44)];
-//    rightView.backgroundColor =[UIColor redColor];
+
     UILabel *title =[[UILabel alloc] initWithFrame:CGRectMake(0, 0, 70, 20)];
     title.text =@"多云";
+    title.shadowColor = UIColorRGBA(0, 0, 0, 0.2);
+    title.shadowOffset = CGSizeMake(1, 0);
     title.textAlignment = NSTextAlignmentCenter;
     title.textColor= UIColorRGB(234, 234, 234);
-//    title.font  = [UIFont systemFontOfSize:13];
     title.font = [UIFont boldSystemFontOfSize:11];
     [rightView addSubview:title];
     
 
     UILabel *wendu = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(title.frame), 70, 20)];
     wendu.text =@"19℃-23℃";
+    wendu.shadowColor = UIColorRGBA(0, 0, 0, 0.2);
+    wendu.shadowOffset =CGSizeMake(1, 0);
     wendu.textColor =UIColorRGB(234, 234, 234);
     wendu.textAlignment =NSTextAlignmentCenter;
     wendu.font =[UIFont systemFontOfSize:11];
@@ -72,8 +86,8 @@
 
 -(void)pushAct
 {
-    YGTqViewController *tq =[[YGTqViewController alloc] init];
-    [self.navigationController pushViewController:tq animated:NO];
+    YGWeaViewController *tq =[[YGWeaViewController alloc] init];
+    [self.navigationController pushViewController:tq animated:YES];
 }
 
 
@@ -104,7 +118,7 @@
     [self.view addSubview:btn1];
     
     NSArray *titleArr =@[@"人文地理",@"特色资源",@"发展规划"];
-    NSArray *colorA = @[UIColorRGB(255, 167, 38),UIColorRGB(238, 104, 62),UIColorRGB(111, 142, 157)];
+    NSArray *colorA = @[UIColorRGB(255, 167, 38),UIColorRGB(238, 104, 62),UIColorRGB(0, 150, 136)];
     for (int i =0; i<3; i++) {
         
         UIView * vi =[[UIView alloc] initWithFrame:CGRectMake(CGRectGetMaxX(btn1.frame) +i *width,SCR_H-2*w-heigth, width, heigth)];
@@ -136,11 +150,28 @@
             switch (i) {
                 case 0:
                 {
-                    briefViewController *view =[[briefViewController alloc] init];
-                    [self.navigationController pushViewController:view animated:YES];
+                    
+                    YGEasyLifeViewController *life =[[YGEasyLifeViewController alloc] init];
+                    [self.navigationController pushViewController:life animated:YES];
+                    break;
+                }
+                    case 2:
+                {
+                    YGFarmerViewController *farmer =[[YGFarmerViewController alloc] init];
+                    [self.navigationController pushViewController:farmer animated:YES];
                     break;
                 }
 
+                    case 3:
+                {
+                    YGGovernmentViewController *gover =[[YGGovernmentViewController alloc] init];
+                    [self.navigationController pushViewController:gover animated:YES];
+                    break;
+                }
+                    case 4:
+                {
+                    [self.navigationController pushViewController:[[YGNewsViewController alloc] init] animated:YES];
+                }
                 default:
                     break;
             }
@@ -154,6 +185,7 @@
 -(void)smallBtnAct:(UITapGestureRecognizer *)viewTap
 {
     NSInteger tag1 = viewTap.view.tag -baseTag;
+    
     switch (tag1) {
         case 0:
         {
@@ -178,14 +210,6 @@
         
     }
 }
-
-
-
-
-
-
-
-
 
 
 

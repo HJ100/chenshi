@@ -7,7 +7,9 @@
 //
 
 #import "briefViewController.h"
-#define  baseTag 400
+#define  baseTag 500
+
+#import "YGLifeIcon.h"
 
 @interface briefViewController ()
 
@@ -17,26 +19,46 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor=UIColorRGB(245, 245, 245);
+    self.view.backgroundColor=UIColorRGB(238, 238, 238 );
+    self.tableView.separatorStyle = UITableViewCellSelectionStyleNone;
     [self creatView];
 }
 
 -(void)creatView
 {
     NSArray *name =@[@"人文地理",@"特色资源",@"发展规划",@"人口民族",@"名胜古迹",@"社会事业"];
-    CGFloat sep = (self.view.bounds.size.width-75*3)/4;
+    CGFloat width = 75;
+    CGFloat sep = (self.view.bounds.size.width-width*3)/4;
     NSLog(@"%lf",sep);
-//    CGFloat sep = 10;
     for (int i=0; i<6; i++) {
-        UIButton *btn =[[UIButton alloc] initWithFrame:CGRectMake(sep+(i %3)*(75+sep), 64+20+(i/3)*(75+20), 75, 75)];
-        btn.backgroundColor =[UIColor magentaColor];
-        [btn setTitle:name[i] forState:UIControlStateNormal];
-        btn.tag = baseTag +i;
-        btn.layer.cornerRadius =75/2.f;
-        [self.view addSubview:btn];
         
+        YGLifeIcon *icon = [[YGLifeIcon alloc] initWithFrame:CGRectMake(sep+(i%3)*(width+sep), sep+(i/3)*(width+20+sep), width, width+20)];
+        [icon setIconColor:[UIColor magentaColor] ImageIcon:@"聚焦三农图标" title:name[i]];
+        icon.tag = baseTag +i;
+        [icon addGestureRecognizer:[[UIGestureRecognizer alloc] initWithTarget:self action:@selector(iconAct:)]];
+        [self.tableView addSubview:icon];
     }
+   
 }
 
+-(void)iconAct:(UITapGestureRecognizer *)tap
+{
+    switch (tap.view.tag-baseTag) {
+        case 0:
+        {
+            break;
+        }
+            case 1:
+        {
+            break;
+        }
+            case 2:
+        {
+            break;
+        }
+        default:
+            break;
+    }
+}
 
 @end

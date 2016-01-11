@@ -25,7 +25,7 @@
     if (self = [super initWithFrame:frame]) {
         self.isCircle =NO;
         self.rollingInterval=3.5;
-        self.scrV.frame = CGRectMake(0, 0, frame.size.width, frame.size.height);
+        self.scrV.frame = CGRectMake(0,0, frame.size.width, frame.size.height);
         self.scrV.pagingEnabled=YES;
         self.scrV.showsHorizontalScrollIndicator=NO;
         self.scrV.bounces =NO;
@@ -155,7 +155,7 @@
     if (!_scrV) {
         _scrV =[[UIScrollView alloc] init];
         _scrV.delegate=self;
-        _scrV.backgroundColor =[UIColor yellowColor];
+        _scrV.backgroundColor = UIColorRGB(67, 82, 140);
         [self addSubview:_scrV];
     }
     

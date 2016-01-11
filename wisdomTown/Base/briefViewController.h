@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface briefViewController : UIViewController
+#import "YGBaseTableViewController.h"
+
+@interface briefViewController : YGBaseTableViewController
 
 @end

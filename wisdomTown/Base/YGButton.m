@@ -10,6 +10,8 @@
 
 @interface YGButton ()
 
+@property(nonatomic,strong)UIView *vi;
+
 //全局变量，用来临时存储代码段
 @property (nonatomic,strong)void(^clickCallBack)(YGButton *button);
 
@@ -25,7 +27,8 @@
     button.frame=frame;
     [button setTitle:title forState:UIControlStateNormal];
     [button setImage:[UIImage imageNamed:image] forState:UIControlStateNormal];
-     
+    [button setBackgroundImage:[UIImage imageNamed:@"矩形 1"] forState:UIControlStateHighlighted];
+    
     button.backgroundColor = color;
     
 
@@ -47,6 +50,17 @@
     
     button.titleEdgeInsets = UIEdgeInsetsMake(20, -imageSize.width, -(imageSize.height), 0);
     
+    //设置文字阴影效果
+    [button setTitleShadowColor:UIColorRGBA(0, 0, 0, 0.2) forState:UIControlStateNormal];
+    [button setTitleShadowOffset:CGSizeMake(2, 0)];
+    
+    if (button.state==UIControlStateHighlighted) {
+        UIView *vi =[[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(button.frame), CGRectGetHeight(button.frame))];
+        vi.backgroundColor = UIColorRGBA(0, 0, 0, 0.2);
+        button.backgroundColor = UIColorRGBA(0, 0, 0, 0.2);
+        [button addSubview:vi];
+    }
+    
     return button;
 }
 
@@ -56,7 +70,6 @@
         button.clickCallBack(button);
     }
 }
-
 
 
 @end
