@@ -12,23 +12,56 @@
 
 @property (nonatomic,strong)UIWebView *webV;
 
+
+
 @end
 
 @implementation YGNovelViewController
+{
+    UIAlertView *myAlert;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self addBackBtn];
+    self.title =@"在线小说";
+//    [self addBackBtn];
 }
 
 -(void)viewWillAppear:(BOOL)animated
 {
 //    [super viewWillAppear:YES];
 //    self.navigationController.navigationBarHidden = YES;
+    
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://m.hongxiu.com/"]];
     [self.webV loadRequest:request];
     [self.view addSubview:self.webV];
 }
+
+
+
+
+- (void)webViewDidStartLoad:(UIWebView *)webView{
+
+    if (myAlert==nil){
+        myAlert = [[UIAlertView alloc] initWithTitle:nil
+                                             message: @"读取中..."
+                                            delegate: self
+                                   cancelButtonTitle: nil
+                                   otherButtonTitles: nil];
+        
+        UIActivityIndicatorView *activityView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
+        activityView.frame = CGRectMake(120.f, 48.0f, 38.0f, 38.0f);
+        [myAlert addSubview:activityView];
+        [activityView startAnimating];
+        [myAlert show];
+    }
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView{
+    [myAlert dismissWithClickedButtonIndex:0 animated:YES];
+}
+
+
 
 -(void)addBackBtn
 {
@@ -49,7 +82,7 @@
 {
     if (!_webV) {
         _webV =[[UIWebView alloc] initWithFrame:self.view.bounds];
-        _webV.backgroundColor =[UIColor redColor];
+//        _webV.backgroundColor =[UIColor redColor];
     }
     return _webV;
 }

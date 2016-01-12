@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title =@"聚焦三农";
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self createView];
   
@@ -31,7 +32,6 @@
             switch (i) {
                 case 0:
                 {
-    
                     break;
                 }
                     

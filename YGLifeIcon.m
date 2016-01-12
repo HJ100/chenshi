@@ -48,9 +48,9 @@
 {
     if (!_title) {
         _title =[[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.imageIcon.frame)+5, CGRectGetWidth(self.imageIcon.frame), 20)];
-        _title.font = [UIFont boldSystemFontOfSize:15];
+        _title.font = [UIFont systemFontOfSize:13];
         _title.textAlignment = NSTextAlignmentCenter;
-        _title.textColor = [UIColor blackColor];
+        _title.textColor = UIColorRGB(62, 62, 62);
         [self addSubview:_title];
     }
     return _title;

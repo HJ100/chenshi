@@ -12,6 +12,8 @@
 #import "YGSpecialViewController.h"
 #import "YGNovelViewController.h"
 #import "YGGameViewController.h"
+#import "YGTrainViewController.h"
+
 
 #define iconTag 654
 
@@ -23,23 +25,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = UIColorRGB(238, 238, 238);
     //去掉tableview 的分割线
     self.tableView.separatorStyle =UITableViewCellSeparatorStyleNone;
+    
+    self.navigationItem.title=@"便民生活";
     [self createView];
 }
 
 -(void)createView
 {
-    NSArray *titleArr =@[@"办事指南",@"机构信息",@"天气",@"酒店",@"餐饮",@"娱乐",@"水费查询",@"电费查询",@"小说",@"游戏",@"健康",@"火车查询"];
+    NSArray *titleArr =@[@"机构信息",@"天气预报",@"办事指南",@"酒店住宿",@"休闲娱乐",@"餐饮美食",@"健康医疗",@"在线小说",@"在线游戏",@"火车查询",@"电费查询",@"水费查询"];
     
-    CGFloat width =65;
-    CGFloat sep = (SCR_W-width*4.f)/5;
+    NSArray *iconImgArr =@[@"机构",@"天气",@"办事",@"住宿",@"休闲",@"美食",@"医疗",@"小说",@"游戏",@"火车",@"电费",@"水费"];
+    
+    CGFloat width =75;
+    CGFloat sep = (SCR_W-width*3.f)/4;
 
     for (int i=0; i<titleArr.count; i++) {
         YGLifeIcon *icon =[[YGLifeIcon alloc]init];
-        icon.frame =CGRectMake((i%4) *(width+sep)+sep, (i/4)*(width+sep+25)+sep, width, width+25);
-        [icon setIconColor:[UIColor purpleColor] ImageIcon:@"便民生活图标" title:titleArr[i]];
+        icon.frame =CGRectMake((i%3) *(width+sep)+sep, (i/3)*(width+25+26)+26, width, width+25);
+        [icon setIconColor:[UIColor clearColor] ImageIcon:iconImgArr[i] title:titleArr[i]];
         icon.tag = iconTag +i;
 //          icon.backgroundColor=i%2?[UIColor greenColor]:[UIColor yellowColor];
         [icon addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(iconAction:)]];
@@ -78,14 +83,19 @@
         {
             break;
         }
-            case 8:
+            case 7:
         {
             [self.navigationController pushViewController:[[YGNovelViewController alloc] init] animated:YES];
             break;
         }
-            case 9:
+            case 8:
         {
             [self.navigationController pushViewController:[[YGGameViewController alloc] init] animated:YES];
+            break;
+        }
+            case 9:
+        {
+            [self.navigationController pushViewController:[[YGTrainViewController alloc] init] animated:YES];
             break;
         }
         default:

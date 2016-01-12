@@ -73,37 +73,17 @@
         NSMutableArray *dataA = [[NSMutableArray alloc] init];
         
         for (NSDictionary *dic in forecastArr) {
-//            weather *wea  =[[weather alloc] initWithDict:dic];
-//            [self.dataSource addObject:wea];
+            weather *wea  =[[weather alloc] initWithDict:dic];
+            [self.dataSource addObject:wea];
             
-            self.labelWeather.text = dic[@"type"];
-            self.labelWendu.text =  [dic[@"high"] substringFromIndex:3] ;
-            self.labelWeatherArea.text = dic[@"fengli"];
-            self.labelWenArea.text = [self.labelWendu.text stringByAppendingString:[NSString stringWithFormat:@"/%@",[dic[@"low"] substringFromIndex:3]]];
-            dataStr=[dic[@"date"] substringFromIndex:3];
+            
 //            daNSLog(@"%@",self.labelWeather.text);
         
         }
         
-        [dataA addObject:dataStr];
+        [self bigImgV];
+        [self addView];
         
-         CGFloat width = (CGRectGetWidth(self.backgroundImg.frame)-5.f)/6.f;
-        NSArray *dataArr =@[@"昨天",@"今天",@"明天",];
-        
-        for (int i=0; i<6; i++) {
-        weakView *weakV =[[weakView alloc] initWithFrame:CGRectMake(i*(width+1)+10, 20+424, width,233)];
-            weakV.labelType.text = self.labelWeather.text;
-            weakV.labelArea.text = self.labelWenArea.text;
-            
-            if (i>=3) {
-                weakV.labelData.text = dataStr;
-            }
-            else{
-                weakV.labelData.text =dataArr[i];
-            }
-            [self.view addSubview:weakV];
-        }
-  
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         
@@ -111,10 +91,38 @@
     }];
 }
 
+-(void)bigImgV
+{
+    
+    weather *we =self.dataSource.firstObject;
+
+    self.labelWeather.text = we.type;
+    self.labelWendu.text =  [we.high substringFromIndex:3] ;
+    self.labelWeatherArea.text = we.fengli;
+    self.labelWenArea.text = [self.labelWendu.text stringByAppendingString:[NSString stringWithFormat:@"/%@",[we.low substringFromIndex:3]]];
+  
+}
+
 /**一星期的天气状况*/
 -(void)addView
 {
-   
+    CGFloat width = (CGRectGetWidth(self.backgroundImg.frame)-5.f)/6.f;
+    NSArray *dataArr =@[@"昨天",@"今天",@"明天",];
+    
+    for (int i=0; i<6; i++) {
+        weakView *weakV =[[weakView alloc] initWithFrame:CGRectMake(i*(width+1)+10, 20+424, width,233)];
+        weakV.labelType.text = self.labelWeather.text;
+        weakV.labelArea.text = self.labelWenArea.text;
+        
+        if (i>=2) {
+//            weakV.labelData.text = dataStr;
+        }
+        else{
+            weakV.labelData.text =dataArr[i];
+        }
+        [self.view addSubview:weakV];
+    }
+
 }
 
 -(NSMutableArray *)dataSource

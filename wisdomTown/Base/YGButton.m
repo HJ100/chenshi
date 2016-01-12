@@ -52,7 +52,7 @@
     
     //设置文字阴影效果
     [button setTitleShadowColor:UIColorRGBA(0, 0, 0, 0.2) forState:UIControlStateNormal];
-    [button setTitleShadowOffset:CGSizeMake(2, 0)];
+    [button setTitleShadowOffset:CGSizeMake(1, -1)];
     
     if (button.state==UIControlStateHighlighted) {
         UIView *vi =[[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(button.frame), CGRectGetHeight(button.frame))];

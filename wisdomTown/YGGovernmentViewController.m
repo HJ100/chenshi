@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.title =@"阳光政务";
     NSArray *arr =@[@"权利清单",@"责任清单",@"信息公示",@"组织架构",@"政策文库"];
     self.dataSource = (NSMutableArray *)arr;
    

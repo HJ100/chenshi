@@ -21,6 +21,7 @@
     [super viewDidLoad];
     self.view.backgroundColor=UIColorRGB(238, 238, 238 );
     self.tableView.separatorStyle = UITableViewCellSelectionStyleNone;
+    self.title=@"乡镇概述";
     [self creatView];
 }
 

@@ -10,7 +10,7 @@
 #import "YGEasyScrollView.h"
 #import "briefViewController.h"
 #import "YGSpecialViewController.h"
-#import "YGWeaViewController.h"
+#import "YGweatherViewController.h"
 #import "YGButton.h"
 #import "YGEasyLifeViewController.h"
 #import "YGFarmerViewController.h"
@@ -86,7 +86,7 @@
 
 -(void)pushAct
 {
-    YGWeaViewController *tq =[[YGWeaViewController alloc] init];
+    YGweatherViewController *tq =[[YGweatherViewController alloc] init];
     [self.navigationController pushViewController:tq animated:YES];
 }
 

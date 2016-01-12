@@ -8,7 +8,11 @@
 
 #import "YGBaseTableViewController.h"
 
+#import "MBProgressHUD.h"
+
 @interface YGBaseTableViewController ()
+
+@property (nonatomic,strong)MBProgressHUD *hud;
 
 @end
 
@@ -19,10 +23,29 @@
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.dataSource =self;
     self.tableView.delegate =self;
-    self.tableView.backgroundColor=UIColorRGB(238, 238, 238);
+    self.tableView.backgroundColor=UIColorRGB(236, 236, 236);
+}
+
+-(void)showLoadingView
+{
+    [self.hud show:YES];
+}
+
+-(void)hideLoadingView
+{
+    [self.hud hide:YES];
 }
 
 
+-(MBProgressHUD *)hud
+{
+    if (!_hud) {
+        _hud = [[MBProgressHUD alloc] initWithView:self.view  ];
+        _hud.labelText = @"加载中...";
+        [self.view addSubview:_hud];
+    }
+    return  _hud;
+}
 
 #pragma mark - Table view data source
 

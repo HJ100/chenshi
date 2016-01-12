@@ -17,6 +17,7 @@
         self.type = dict[@"type"];
         self.low = dict[@"low"];
         self.date = dict[@"date"];
+        self.fengli =dict[@"fengli"];
     }
     return self;
 }

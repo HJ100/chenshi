@@ -14,6 +14,7 @@
 @property (nonatomic, strong) NSString *type;
 @property (nonatomic, strong) NSString *low;
 @property (nonatomic, strong) NSString *date;
+@property (nonatomic, strong) NSString *fengli;
 
 -(instancetype)initWithDict:(NSDictionary *)dict;
 

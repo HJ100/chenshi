@@ -12,4 +12,9 @@
 
 @property (nonatomic,strong)NSMutableArray *dataSource;
 
+
+-(void)showLoadingView;
+
+-(void)hideLoadingView;
+
 @end

@@ -17,6 +17,7 @@
     UINavigationBar *navBar =[UINavigationBar appearance];
     [navBar setBarStyle:UIBarStyleBlack];
     [navBar setTintColor:[UIColor whiteColor]];
+    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60) forBarMetrics:UIBarMetricsDefault];
 }
 
 @end

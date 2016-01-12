@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.title =@"在线游戏";
 }
 
 -(void)viewWillAppear:(BOOL)animated
